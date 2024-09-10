@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML AND CSS BASICS</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -14,23 +14,188 @@
         body{
             height: 100vh;
             width: 100vw;
-            background-color: purple;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
         }
-        h1,u
+        .section1{
+            width: 65%;
+            max-height: 11rem;
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            background: #0F2027;
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+            font-weight: 900;
+        }
+        .profile-img-section{   
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        .profile-img{
+            border-radius: 10px;
+        }
+
+        .profile-data{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-data-name{
+            color: tan;
+        }
+
+        .section2{
+            width: 65%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:start;
+            padding: 10px;
+            border: 1px solid #2C5364;
+            font-weight: 900;
+        }
+
+        .section2-desc{
+            color: tan;   
+        }
+        
+        .section-title{
+            display: flex;
+            justify-content: start;
+            color: cadetblue;
+        }
+
+        .section3{
+            width: 65%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #2C5364;
+            padding: 10px;
+            font-weight: 900;
+        }
+
+        .section-table,td,th
         {
             text-align: center;
-            color: white;
+            border-collapse: collapse;
+            border: 1px solid tan;
+            color: tan;
+        }
+
+
+        .section4 {
+            width: 65%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #2C5364;
+            padding: 10px;
+            font-weight: 900;
+        }
+        
+        .companies{
+            color: cadetblue;
+        }
+        
+        .section4>p{
+            color: tan;
+        }
+        
+        .section5 {
+            width: 65%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border: 1px solid #2C5364;
+            padding: 5px;
+            font-weight: 900;
         }
     </style>
 </head>
 <body>
-    <u><h1>
-        MERN Project!
-    </h1></u>
-    <div class="item1">1</div>
-    <div class="item2">2</div>
-    <div class="item3">3</div>
-    <div class="item4">4</div>
-    <div class="item5">5</div>
+    <div class="section1">
+        <div class="profile-img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSA1zygA3rubv-VK0DrVcQ02Po79kJhXo_A&s"  class = "profile-img">
+        </div>
+
+        <div class="profile-data">
+            <h1 class="profile-data-name">Madhan</h1>
+            <h3 style="color: tan;">madhang2306@gmail.com</h3>
+        </div>
+    </div>
+    <div class="section2">
+        <h1 class="section-title">
+            Objective
+        </h1>
+        <p class="section2-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        </div>
+    </div>
+    <div class="section3">
+        <h1 class="section-title">
+            Education
+        </h1>
+        <table class="section-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section4">
+        <h1 class="section-title">
+            Internship
+        </h1>
+        <p>
+            <span class="companies">ACCOUNT MANAGER /  VANAESDEL, LTD : </span> 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        <br>
+        <p>
+            <span class="companies">ACCOUNT MANAGER /  VANAESDEL, LTD : </span> 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+
+    </div>
+    <div class="section5">
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
 </body>     
 </html>
