@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./asset/css/form.css">
+  <title>Form Example</title>
+</head>
+<body>
+  <center><u><h1>User Login Form</h1></u></center>
+  <div class="cont">
+    <form class="form" action="javascript:void(0)"  onsubmit="demo()">
+      <input type="text" id="name" placeholder="Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="number" id="phone" placeholder="Phone No">
+      <input type="passwrod" id="password" placeholder="Password">
+      <input type="submit" id="submit" class = "register">
+    </form>
+  </div>
+
+  <script>
+    function demo()
+    {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let number = document.getElementById("phone").value;
+      let password = document.getElementById("password").value;
+        const data = {
+          username : name,
+          useremail : email,
+          usernum : number,
+          userpass : password
+        }
+    
+        const {username, useremail ,usernum , userpass} = data;
+        
+        console.log(data);
+        
+      }
+
+  </script>
+
+</body>
+</html>

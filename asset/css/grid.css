@@ -1,0 +1,44 @@
+.cont{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3.33%);
+    grid-template-rows: repeat(3, 33%);
+    grid-gap: 10px;
+    border: 1px solid black;    
+}
+
+
+.red{
+    background-color: red;
+    animation: 3s myAnimation1 ease-in;
+}
+.emojie{
+    font-size: 200px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    animation: 3s myAnimation ease-in;
+}
+
+.blue{
+    background-color: blue;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    animation: 5s myAnimation2 infinite;
+}
+
+@keyframes myAnimation {
+    0%{
+        /* scale: 0%; */
+        opacity: 0;
+    }
+    50%{
+        /* scale: 50%; */
+        opacity: 0.5;
+    }
+    100%{
+        /* scale: 100%; */
+        opacity: 1;
+    }
+}
+
