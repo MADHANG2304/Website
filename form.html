@@ -13,6 +13,7 @@
       <input type="text" id="name" placeholder="Name">
       <input type="email" id="email" placeholder="Email">
       <input type="number" id="phone" placeholder="Phone No">
+      <input type="number" id="age" placeholder="Age">
       <input type="passwrod" id="password" placeholder="Password">
       <input type="submit" id="submit" class = "register">
     </form>
@@ -25,18 +26,29 @@
       let email = document.getElementById("email").value;
       let number = document.getElementById("phone").value;
       let password = document.getElementById("password").value;
-        const data = {
-          username : name,
-          useremail : email,
-          usernum : number,
-          userpass : password
-        }
-    
-        const {username, useremail ,usernum , userpass} = data;
-        
-        console.log(data);
-        
+      let age = document.getElementById("age").value;
+      
+
+      if(name !== "" || email !== "" || number !== "" || password !== "" || age !== "")
+      {
+        console.log("Login Successful");
       }
+      else{
+        console.log("Login Failed");
+      }
+
+      console.log(age >= 18 ? "Age Accepted" : "Age is less than 18");
+
+      const data = {
+        userName : name,
+        userEmail : email,
+        userNum : number,
+        userPass : password,
+        userAge : age
+      }
+  
+      const {userName, userEmail ,userNum , userPass, userAge} = data;
+    }
 
   </script>
 
